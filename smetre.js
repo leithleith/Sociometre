@@ -41,11 +41,11 @@ function calcul()
       }
     }
   }
-  var vtheta = ["Environnement de Qualité", "Environnement Dégradé", "Environnement de Rupture"];
+  var vtheta = ["Qualité", "Dégradé", "Rupture"];
   var data = [{
     r: [A, 0, 0],
     theta: vtheta,
-    name: "Qualité",
+    name: "Environnement de travail de qualité",
     marker: {color: "rgb(36, 140, 70)"},
     type: "barpolar",
     hoverinfo: "name"
@@ -53,7 +53,7 @@ function calcul()
   {
     r: [0, B, 0],
     theta: vtheta,
-    name: "Dégradé",
+    name: "Environnement de travail dégradé",
     marker: {color: "rgb(255, 147, 51)"},
     type: "barpolar",
     hoverinfo: "name"
@@ -61,7 +61,7 @@ function calcul()
            {
     r: [0, 0, C, 0, 0],
     theta: vtheta,
-    name: "Rupture",
+    name: "Environnement de travail de rupture",
     marker: {color: "rgb(255, 0, 36)"},
     type: "barpolar",
     hoverinfo: "name"
